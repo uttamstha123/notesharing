@@ -6,12 +6,12 @@ const Users = () => {
     let [user, setUser] = useState("");
 
     const getuser = async () => {
-        let result = await fetch(`https://notesharing-backend/users`);
+        let result = await fetch(`https://notesharing-backend.onrender.com/users`);
         result = await result.json();
         setUser(result);
     }
     const deleteUser =async (id) =>{
-        let result = await fetch(`https://notesharing-backend/deleteuser/${id}`,{
+        let result = await fetch(`https://notesharing-backend.onrender.com/deleteuser/${id}`,{
             method:'delete'
         });
         if(result){

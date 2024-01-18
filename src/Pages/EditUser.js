@@ -16,7 +16,7 @@ const EditUser = () =>{
 
     let id = JSON.parse(localStorage.getItem('user'))._id;
     const getUser =async ()=>{
-        let result = await fetch(`https://notesharing-backend/getuser/${id}`,{
+        let result = await fetch(`https://notesharing-backend.onrender.com/getuser/${id}`,{
             method:'post'
         });
         result = await result.json();
@@ -25,7 +25,7 @@ const EditUser = () =>{
     }
     
     const update =async () =>{
-        let result = await fetch(`https://notesharing-backend/updateuser/${id}`,{
+        let result = await fetch(`https://notesharing-backend.onrender.com/updateuser/${id}`,{
             method:'post',
             body: JSON.stringify({name,email,contact,password,address}),
             headers:{

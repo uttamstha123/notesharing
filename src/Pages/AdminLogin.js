@@ -10,7 +10,7 @@ const AdminLogin = () => {
     let username = email;
     const adminLoginHandler = async () => {
         console.log(username, password);
-        let result = await fetch("https://notesharing-backend/login", {
+        let result = await fetch("https://notesharing-backend.onrender.com/login", {
             method: 'post',
             body: JSON.stringify({ username, password }),
             headers: {

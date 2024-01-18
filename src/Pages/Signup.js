@@ -12,7 +12,7 @@ const Signup = () =>{
 
     const newSignup =async () =>{
         console.log(name,email,contact,password,address);
-        let result = await fetch(`https://notesharing-backend/signup`,{
+        let result = await fetch(`https://notesharing-backend.onrender.com/signup`,{
             method:'post',
             body: JSON.stringify({name,email,contact,password,address}),
             headers:{

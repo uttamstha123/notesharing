@@ -11,7 +11,7 @@ const AddNotesAdmin = () =>{
     let addby = "admin";
     const addNews =async () =>{
         console.warn(topic,subtopic,content,addby);
-        let result = await fetch(`https://notesharing-backend/addnotes-admin`,{
+        let result = await fetch(`https://notesharing-backend.onrender.com/addnotes-admin`,{
             method:'post',
             body:JSON.stringify({topic,subtopic,content,addby}),
             headers:{

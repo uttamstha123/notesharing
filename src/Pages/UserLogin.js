@@ -8,7 +8,7 @@ const UserLogin = () =>{
     let navigate = useNavigate();
 
     const userLogin =async () =>{
-        let result = await fetch(`https://notesharing-backend/userlogin`,{
+        let result = await fetch(`https://notesharing-backend.onrender.com/userlogin`,{
             method:'post',
             body: JSON.stringify({email,password}),
             headers:{
