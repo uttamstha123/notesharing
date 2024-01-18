@@ -1,0 +1,47 @@
+.mynotes-base{
+    /* background-color: aliceblue; */
+}
+
+.mynotes-base2{
+    /* background-color: rgb(227, 240, 252); */
+    padding: 10px;
+}
+
+.mynotes-base h1 {
+    color: rgb(50,50,50)
+}
+
+.mynotes-notes{
+    /* background-color: rgb(204, 216, 227); */
+    background-color: rgb(176, 176, 176);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.mynotes-topic{
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+}
+.mynotes-subtopic{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.mynotes-content{
+    font-size: 20px;
+}
+
+.mynotes-delete{
+    color: red;
+    cursor: pointer;
+}
+
+.mynotes-edit{
+    color: blue;
+}
+
+.myNotesBox {
+    height: 80vh;
+}

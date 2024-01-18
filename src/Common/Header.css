@@ -1,0 +1,34 @@
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+}
+*{
+    margin: 0;
+    text-decoration: none;
+}
+.header-main-div{
+    background-color: rgb(176, 176, 176);
+    text-align: right;
+    /* padding: 5px; */
+    height: 8vh;
+    color: rgb(50, 50, 50);
+
+}
+.header-menu-items{
+    list-style: none;
+}
+.header-menu-items li{
+    display: inline;
+    font-size: 25px;
+    /* padding-right: 25px; */
+}
+.header-menu-items li a{
+    color: rgb(50, 50, 50);
+    font-weight: 500;
+}
+
+textarea {
+    outline: none;
+}

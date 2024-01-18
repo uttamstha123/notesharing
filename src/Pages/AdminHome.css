@@ -1,0 +1,20 @@
+
+
+
+.adminhome-main{
+    /* background-color: rgb(252, 240, 255); */
+    /* border: 2px solid red; */
+    height: 92vh;
+}
+
+.adminhome-img{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid black; */
+    background-image: url('../../public/images/notes_bg3.jpg');
+    background-size: 100% 100%;
+    object-fit: fill;
+    /* border-radius: 20px; */
+    /* box-shadow: 10px 10px 8px 10px rgb(177, 152, 184); */
+}
+
