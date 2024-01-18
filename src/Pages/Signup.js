@@ -18,7 +18,8 @@ const Signup = () =>{
             headers:{
                 'Content-Type':'application/json'
             },
-            success: () => {
+            success: (response) => {
+                console.log(response)
                 console.log('User registered successfully');
             },
             error: () => {
