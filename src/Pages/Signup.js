@@ -29,7 +29,7 @@ const Signup = () =>{
         result = await result.json();
 
         if(result) {
-            window.location.href = "/userlogin";
+            window.location.href = "/";
         }
         
         // console.log(result);
