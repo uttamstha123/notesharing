@@ -6,12 +6,12 @@ const Users = () => {
     let [user, setUser] = useState("");
 
     const getuser = async () => {
-        let result = await fetch(`http://localhost:4500/users`);
+        let result = await fetch(`https://notesharing-backend/users`);
         result = await result.json();
         setUser(result);
     }
     const deleteUser =async (id) =>{
-        let result = await fetch(`http://localhost:4500/deleteuser/${id}`,{
+        let result = await fetch(`https://notesharing-backend/deleteuser/${id}`,{
             method:'delete'
         });
         if(result){

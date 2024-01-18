@@ -10,14 +10,14 @@ const ReadNotesUser = () => {
     }, []);
 
     const allNotes = async () => {
-        let result = await fetch(`http://localhost:4500/readnotesuser`);
+        let result = await fetch(`https://notesharing-backend/readnotesuser`);
         result = await result.json();
         setNotes(result);
     }
     const search = async (e) => {
         let key = e.target.value;
         if (key) {
-            let result = await fetch(`http://localhost:4500/search/${key}`);
+            let result = await fetch(`https://notesharing-backend/search/${key}`);
             result = await result.json();
             if (result) {
                 setNotes(result);

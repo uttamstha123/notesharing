@@ -15,7 +15,7 @@ const EditNotesAdmin = () =>{
     },[]);
     
     const getNotesAdmin =async ()=>{
-        let result = await fetch(`http://localhost:4500/getnotesadmin/${params.key}`);
+        let result = await fetch(`https://notesharing-backend/getnotesadmin/${params.key}`);
         result = await result.json();
         setTopic(result.topic);
         setSubTopic(result.subtopic);
@@ -25,7 +25,7 @@ const EditNotesAdmin = () =>{
 
     let addby = "admin";
     const updateNotesAdmin =async ()=>{
-        let result = await fetch(`http://localhost:4500/editnotesadmin/${params.key}`,{
+        let result = await fetch(`https://notesharing-backend/editnotesadmin/${params.key}`,{
             method:'put',
             body: JSON.stringify({topic,subtopic,content,addby}),
             headers:{

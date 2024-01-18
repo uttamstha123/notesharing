@@ -6,7 +6,7 @@ const ReadNotesAdmin = () =>{
     let [notes, setNotes] = useState([]);
 
     const readNews =async () =>{
-        let result = await fetch(`http://localhost:4500/readnotesadmin`);
+        let result = await fetch(`https://notesharing-backend/readnotesadmin`);
         result = await result.json();
         setNotes(result);
         // console.log(result);
@@ -14,7 +14,7 @@ const ReadNotesAdmin = () =>{
     readNews();
 
     const deleteNoteAdmin =async (id)=>{
-        let result = await fetch(`http://localhost:4500/deletenotesadmin/${id}`,{
+        let result = await fetch(`https://notesharing-backend/deletenotesadmin/${id}`,{
             method:'delete'
         });
         if(result){console.log("Deleted");}

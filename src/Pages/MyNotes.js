@@ -8,7 +8,7 @@ const MyNotes = () => {
     let useId = JSON.parse(localStorage.getItem('user'))._id;
 
     const getNotes =async ()=>{
-        let result = await fetch(`http://localhost:4500/mynotes/${useId}`,{
+        let result = await fetch(`https://notesharing-backend:4500/mynotes/${useId}`,{
             method:'post'
         });
         result = await result.json();
@@ -17,7 +17,7 @@ const MyNotes = () => {
     getNotes();
 
     const deleteNote =async (id)=>{
-        let result = await fetch(`http://localhost:4500/deletenotesadmin/${id}`,{
+        let result = await fetch(`https://notesharing-backend/deletenotesadmin/${id}`,{
             method:'delete'
         });
         if(result){console.log("Deleted");}
