@@ -8,7 +8,7 @@ const MyNotes = () => {
     let useId = JSON.parse(localStorage.getItem('user'))._id;
 
     const getNotes =async ()=>{
-        let result = await fetch(`https://notesharing-backend.onrender.com:4500/mynotes/${useId}`,{
+        let result = await fetch(`https://notesharing-backend.onrender.com/mynotes/${useId}`,{
             method:'post'
         });
         result = await result.json();
